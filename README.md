@@ -8,11 +8,13 @@ The setup follows the instructions in the NR documentation [here](https://docs.n
 ## Get started
 
 1. Build the base Python image w/ Python NR-APM agent
-  * Change the `FROM` in the `Dockerfile` to whichever Python version or Linux distro you wish to use
-  * `docker build -t python_newrelic:latest .`
+    * Change the `FROM` in the `Dockerfile` to whichever Python version or Linux distro you wish to use
+    * `docker build -t python_newrelic:latest .`
+    
 2. `CD` into `/app/` and build the Python script image
-  * Make changes to `../app/config_file/newrelic.ini` as you see fit.
-  * `docker build -t python_app:latest .`
+    * Make changes to `../app/config_file/newrelic.ini` as you see fit.
+    * `docker build -t python_app:latest .`
+
 3. Run the Python script image
 
 ```
